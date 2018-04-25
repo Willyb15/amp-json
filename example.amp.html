@@ -55,7 +55,8 @@
 
   <amp-analytics>
   <script type="application/json">
-  //var x = window.location.
+  var obj = {};
+  obj['name'] = 'value';
   {
     "transport": {"xhrpost": false, "beacon": true},
     "requests": {
@@ -69,7 +70,7 @@
 	  "prop21": "<<Article Title>>",
       "eVar21": "<<Article Title>>",
 	  "eVar22": "<<Article Author>>",
-      "eVar127": window.location;
+      "eVar127":"<<Page URL>>"
      },
     "triggers": {
       "pageLoad": {
