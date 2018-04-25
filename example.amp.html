@@ -59,7 +59,7 @@
     "transport": {"xhrpost": false, "beacon": true},
     "requests": {
       "base": "https://sstats.dice.com/b/ss/diceprod/1/AMP-0.1/s${random}",
-      "pageView": "${base}?AQB=1&vid=CLIENT_ID(adobe_amp_id)&pageName=${pageName}&j=amp&c21=${window.location.href}&v21=${eVar21}&v22=${eVar22}&v127=${eVar127}&AQE=1"
+      "pageView": "${base}?AQB=1&vid=CLIENT_ID(adobe_amp_id)&pageName=${pageName}&j=amp&c21=${prop21}&v21=${eVar21}&v22=${eVar22}&v127=${eVar127}&AQE=1"
   },
   "vars": {
       "trackingServer": "sstats.dice.com",
@@ -75,7 +75,7 @@
         "on": "visible",
         "request": "pageView",
         "vars": {
-	  		"prop21": "<<Article Title>>",
+	  		"prop21": "${window.location.href}",
      		"eVar21": "<<Article Title>>",
 	  		"eVar22": "<<Article Author>>",
       		"eVar127": "<<Page URL>>" 
